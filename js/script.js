@@ -10,6 +10,8 @@ const input = document.querySelector(".search");
 const btnPrev = document.querySelector(".btn-prev");
 const btnNext = document.querySelector(".btn-next");
 
+let titulo = document.querySelector(".title");
+
 let searchPokemon = 1;
 
 const fetchPokemon = async (pokemon) => {
@@ -41,6 +43,7 @@ const renderPokemon = async (pokemon) => {
 
     input.value = "";
     searchPokemon = data.id
+    titulo.innerHTML = ` Pokedex - ${data.name}`;
   } else {
     pokemonImage.style.display = 'none';
     pokemonNome.innerHTML = 'Não encontrado :( ';
