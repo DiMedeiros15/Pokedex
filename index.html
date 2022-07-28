@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,33 +9,38 @@
       href="favicons/favicon-16x16.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css" />
 
-    <script defer src="script.js"></script>
-    
-    <title>Pokedex</title>
+    <title> - Pokedex -</title>
   </head>
   <body>
     <section>
-
+      <img src="images/pokedex.png" alt="pokedex" class="pokedex" />
       <img src="#" alt="Pokemon" class="pokemon_image" />
 
       <h1 class="pokemon-data">
-            <span class="pokemon-numero"> -</span>
-            <span> - </span>
-            <span class="pokemon-nome"></span>
+        <span class="pokemon-numero"> -</span>
+        <span> - </span>
+        <span class="pokemon-nome"> -</span>
       </h1>
 
       <form action="" class="form">
-        <input type="search" class="search" placeholder="nome ou número" required>
+        <input
+          type="search"
+          class="search"
+          placeholder="nome ou número"
+          required
+        />
       </form>
 
       <div class="btns">
         <button class="btn-prev btn">Anterior &lt;</button>
         <button class="btn-next btn">Próximo &gt;</button>
       </div>
-
-      <img src="images/pokedex.png" alt="pokedex" class="pokedex" />
     </section>
+
+    <!-- Script -->
+    <script defer src="js/script.js"></script>
   </body>
 </html>

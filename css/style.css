@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;600&display=swap');
 
+/* Auto : Diego <https://www.linkedin.com/in/diego-medeiros-66a504166/> */
 
 * {
     margin: 0;
@@ -13,20 +15,21 @@ body {
 }
 
 section {
-    display: inline-block;
-    margin-top: 2%;
+    display: flex;
     padding: 15px;
+    justify-content: center;
 }
 
 .pokedex {
     width: 100%;
-    max-width: 425px;
+    max-width: 400px;
+    height: 90vh;
 }
 
 .pokemon_image {
     position: absolute;
-    left: 55%;
-    bottom: 55%;
+    left: 50%;
+    bottom: 58%;
     transform: translate(-63%, 20%);
     height: 18%;
 }
@@ -35,9 +38,12 @@ section {
     position: absolute;
     font-weight: 600;
     color: #aaa;
-    top: 54.5%;
-    right: 35%;
-    font-size: clamp(8px, 5vw, 25px);
+    top: 52%;
+    font-size: clamp(8px, 5vw, 30px);
+}
+
+.pokemon-data:hover ,.pokemon-data span:hover {
+    color: crimson;
 }
 
 .pokemon-nome{
@@ -46,15 +52,17 @@ section {
 }
 
 .form {
-    position: absolute;
-    width: 70%;
-    top: 65%;
-    left: 13.5%;
+    position: fixed;
+    width: 100%;
+    top: 62%;
+    left: -1%;
+    display: flex;
+    justify-content: center;
 }
 
 .search{
-    width: 100%;
-    padding: 3%;
+    width: 280px;
+    padding: 1.2%;
     outline: none;
     border: 2px solid #333;
     font-weight: 600;
@@ -64,18 +72,19 @@ section {
 }
 
 .btns {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    width: 50%;
-    transform: translate(-57%, 0);
+    position: fixed;
+    bottom: 15%;
+    left: -1%;
+    width: 100%;
     display: flex;
-    gap: 20px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .btn {
-    width: 50%;
-    padding: 4%;
+    width: 130px;
+    padding: 1.2%;
     border: 2px solid #000;
     border-radius: 10px;
     font-size: inherit;
@@ -86,7 +95,7 @@ section {
 }
 
 .btn:active {
-    /* background-color: red; */
+    color: crimson;
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
 }
